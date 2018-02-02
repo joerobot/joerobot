@@ -12,7 +12,7 @@ export default {
         },
         {
             "title": "Who are Britain's jihadists?",
-            "name:": "jihadists",
+            "name": "jihadists",
             "date": "Jun 2017",
             "href": "http://www.bbc.co.uk/news/uk-32026985",
             "tech": ["ES6", "React", "Preact"],
