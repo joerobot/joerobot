@@ -9,7 +9,7 @@ class Projects extends React.Component {
     render() {
         const allProjects = projectsData.projects.map((project, index) => {
             return (
-                <li key={index}>
+                <li key={index} className={`project project--${index % 2 === 1 ? 'r' : 'l'}`} >
                     <Project data={project} />
                 </li>
             );
