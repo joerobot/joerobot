@@ -1,3 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #ece7e7;
+    width: 100%;
+    margin: 0;
+    font-family: 'HKGroteskBold', 'Helvetica Neue', -apple-system, BlinkMacSystemFont;
+}
+
+section {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    height: 100vh;
+}
+
+.projects, .person {
+    padding: 480px 20px 20px;
 }
