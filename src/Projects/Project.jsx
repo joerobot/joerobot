@@ -46,18 +46,19 @@ class Project extends React.Component {
             <div>
                 <a
                     className="sixteen-nine"
-                    href={`#${this.project.title}`}
-                    onClick={this.clickHandler}
+                    href={ `#${this.project.title}` }
+                    onClick={ this.clickHandler }
                 >
                     <img className="project-thumb project-thumb__img" src={this.thumbnail} />
                     <h5 className="project-thumb project-thumb__label">
-                        <span>{this.project.title}</span>
+                        <span>{ this.project.title }</span>
                     </h5>
                     <button className="project-thumb project-thumb__button"></button>
                 </a>
                 <Modal
-                    modalView={this.state.modalView}
-                    closeModal={this.closeModal}
+                    project={ this.project }
+                    modalView={ this.state.modalView }
+                    closeModal={ this.closeModal }
                 />
             </div>
         );
