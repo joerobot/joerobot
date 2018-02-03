@@ -53,6 +53,7 @@ class Project extends React.Component {
                     <h5 className="project-thumb project-thumb__label">
                         <span>{this.project.title}</span>
                     </h5>
+                    <button className="project-thumb project-thumb__button"></button>
                 </a>
                 <Modal
                     modalView={this.state.modalView}
