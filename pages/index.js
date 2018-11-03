@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import '../styles/index.scss';
 import Header from '../components/Header/Header';
+import Projects from '../components/Projects/Projects';
 
 export default () => (
     <div>
@@ -10,5 +11,6 @@ export default () => (
             <link rel="stylesheet" href="//fontlibrary.org/face/hk-grotesk" type="text/css"/>
         </Head>
         <Header />
+        <Projects />
     </div>
 )

@@ -23,8 +23,8 @@ body {
   width: 0;
   right: 0;
   left: 0;
-  margin-top: -200vh;
-  height: 200vh;
+  margin-top: -200vmin;
+  height: 200vmin;
   transform-origin: 0 100%;
   transform: rotate(0);
   transition: all 0.4s ease-out;
@@ -46,8 +46,8 @@ body {
   width: 0;
   transition: all 0.6s ease-out; }
   .circle.intro {
-    height: 30vw;
-    width: 30vw;
+    height: 30vmax;
+    width: 30vmax;
     transition: none; }
   .circle.pulse {
     animation: jelly 3s linear both; }
@@ -55,14 +55,15 @@ body {
 .title {
   padding-top: 3vw;
   position: absolute;
-  top: 12vmin;
+  top: 12vh;
   left: 0;
   right: 0;
   margin: auto;
   font-size: 3.5vw;
   color: #1F2954;
   text-align: center;
-  width: 20vw; }
+  width: 20vw;
+  cursor: default; }
   .title .subtitle {
     overflow: hidden;
     height: 6vw;

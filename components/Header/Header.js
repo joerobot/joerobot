@@ -34,8 +34,9 @@ class Header extends React.Component {
     }
     render() {
         return (
-        <div className="portfolio-header">
+        <section className="portfolio-header">
           <div className="triangle" />
+          <div className="triangle-lower" />
           <div className="circle" onClick={this.prod} />
           <div className="title" onClick={this.prod}>
             <h1>
@@ -46,7 +47,7 @@ class Header extends React.Component {
                 <h4>Web Developer</h4>
             </div>
           </div>
-        </div>
+        </section>
         );
     }
 }
