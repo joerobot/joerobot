@@ -1,3 +1,6 @@
 export default (props) => (
-    <li>{props.name}</li>
+    <li>
+    <pre>{JSON.stringify(props)}</pre>
+    {props.title}
+    </li>
 );

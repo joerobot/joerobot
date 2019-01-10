@@ -2,6 +2,7 @@ import Head from 'next/head';
 import '../styles/index.scss';
 import Header from '../components/Header/Header';
 import Projects from '../components/Projects/Projects';
+import Person from '../components/Person/Person';
 
 export default () => (
     <div>
@@ -12,5 +13,6 @@ export default () => (
         </Head>
         <Header />
         <Projects />
+        <Person />
     </div>
 )

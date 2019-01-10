@@ -1,0 +1,3 @@
+An interactive database of UK supporters of Jihadist groups. Filter by using the form or find a specific entry with the autosuggest search. This was my first project built using React as there was need for some complicated state management and the design lent itself to components really well.
+
+During development, we wanted to user test a lot because of some complicated behaviour around the filters: how do you bring a big dataset down to a small, relevant and personal selection? Throughout testing I replaced the filters and data to relate to pets to shift focus from the divisive and sensitive nature of the source material to the behaviour of the app. I gave a short talk about this process internally in _"Dogs, Cats, Fish & Jihadists"_.
