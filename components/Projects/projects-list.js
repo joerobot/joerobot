@@ -9,6 +9,7 @@ export default [{
     url: "https://www.bbc.co.uk/news/election/us2016/results",
     views: "31m",
     description: us2016Desc,
+    images: ['us2016-1', 'us2016-2', 'us2016-3']
 },
 {
     name: "jihadists",
