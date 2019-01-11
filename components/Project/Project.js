@@ -1,6 +1,8 @@
+import ReactMarkdown from 'react-markdown';
+
 export default (props) => (
     <li>
-    <pre>{JSON.stringify(props)}</pre>
     {props.title}
+    <ReactMarkdown source={props.description} />
     </li>
 );

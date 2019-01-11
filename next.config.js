@@ -1,5 +1,14 @@
 const withSass = require('@zeit/next-sass');
-const withMDX = require('@zeit/next-mdx')({
-    extension: /\.(md|mdx)$/
-});
-module.exports = withSass(withMDX());
+
+module.exports = withSass({
+    webpack: (config) => {
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          use: 'raw-loader'
+        }
+      )
+  
+      return config
+    },
+  });
