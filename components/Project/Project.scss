@@ -1,0 +1,23 @@
+.project {
+    list-style-type: none;
+    margin: 0;
+}
+
+.project + .project {
+    margin-top: 24px;
+}
+
+.project__screencap {
+    max-width: 640px;
+    display: block;
+    padding: 0 24px;
+
+    &--v {
+        width: auto;
+        height: 100%;
+    }
+
+    &--w {
+        width: 100%;
+    }
+}

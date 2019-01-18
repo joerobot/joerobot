@@ -1,5 +1,7 @@
 import projects from './projects-list';
 import Project from '../Project/Project';
+import './Projects.scss';
+
 export default () => (
     <section className="projects">
         <h2 className="section-header">Projects</h2>

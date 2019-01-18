@@ -1,16 +1,45 @@
 import ReactMarkdown from 'react-markdown';
-// import Flickity from 'react-flickity-component';
 import Carousel from './../Carousel/Carousel';
-
-const flickityOptions = {};
+import './Project.scss';
 
 export default (props) => (
-    <li>
-    {props.title}
-    <ReactMarkdown source={props.description} />
-    <Carousel>
-        {props.images &&
-            props.images.map((img, i) => <img src={`/static/img/${img}.png`} key={i} />)}
-    </Carousel>
+    <li className="project">
+        <h2>{props.title}</h2>
+        <p><a href={props.url}>{props.urlTitle}</a></p>
+        {props.awards && (
+            <div>
+                <p>Awards:</p>
+                <ul>
+                    {props.awards.map((award, i) => <li key={i}>{award}</li>)}
+                </ul>
+            </div>
+        )}
+        <ReactMarkdown source={props.description} />
+        <Carousel>
+            {props.images &&
+                props.images.map((img, i) => (
+                    <div
+                        className='carousel__cell'
+                        key={i}
+                    >
+                    {
+                        img.video ?
+                        (<video
+                            className='project__screencap project__screencap--v'
+                            autoPlay
+                            loop
+                            muted
+                        >
+                            <source src={`static/video/${img.name}.webm`} type="video/webm" />
+                            <source src={`static/video/${img.name}.mp4`} type="video/mp4" />
+                        </video>) :
+                        (<img
+                            data-flickity-lazyload={`/static/img/${img.name}`}
+                            className={`project__screencap project__screencap--${img.vertical ? 'v' : 'w'}`}
+                        />)
+                    }
+                    </div>
+                ))}
+        </Carousel>
     </li>
 );

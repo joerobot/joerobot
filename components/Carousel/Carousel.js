@@ -1,4 +1,10 @@
 import React from 'react';
+import './Carousel.scss'
+
+const flickityOptions = {
+    wrapAround: true,
+    lazyLoad: 2,
+};
 
 class Carousel extends React.Component {
     state = { Flickity: null };
@@ -14,7 +20,9 @@ class Carousel extends React.Component {
       return (
         <div className="slider-container">
             {Flickity && (
-            <Flickity>
+            <Flickity
+                options={flickityOptions}
+              >
                 {this.props.children}
             </Flickity>
             )}
