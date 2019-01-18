@@ -10,6 +10,7 @@ export default () => (
             <title>joerobot - web developer</title>
             <meta name="viewport" content="width=device-width"/>
             <link rel="stylesheet" href="//fontlibrary.org/face/hk-grotesk" type="text/css"/>
+            <link href="https://fonts.googleapis.com/css?family=Rasa" rel="stylesheet"></link>
         </Head>
         <Header />
         <Projects />
