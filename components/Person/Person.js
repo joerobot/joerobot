@@ -1,5 +1,7 @@
+import './Person.scss';
+
 export default () => (
-  <section className="person">
+  <section className="person section-content">
     <h2 className="section-header">Person</h2>
     <p>
       I'm a front end specialist with a focus on UI and data visualisation.

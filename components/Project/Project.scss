@@ -1,10 +1,41 @@
+@import "../../styles/variables";
+
 .project {
   list-style-type: none;
   margin: 0;
+  max-width: 640px;
 }
 
 .project + .project {
-  margin-top: 24px;
+  padding-top: 50vh;
+}
+
+.project:nth-child(even) {
+  align-self: flex-end;
+
+  .project__title,
+  .project__link {
+    text-align: right;
+  }
+}
+
+.project__title {
+  margin: 24px 0;
+  padding: 0 8px;
+  font-size: 1.5em;
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: $mint;
+    height: 4px;
+    width: calc(100% + 8px);
+    margin: -8px -4px 0;
+  }
+}
+
+.project__content {
+  padding: 0 8px;
 }
 
 .project__screencap {
