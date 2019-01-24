@@ -4,7 +4,7 @@ export default () => (
   <section className="person section-content">
     <h2 className="section-header">Person</h2>
     <p>
-      I'm a front end specialist with a focus on UI and data visualisation.
+      I'm Joe Reed, a front end specialist with a focus on UI and data visualisation.
       Currently working with BBC News Visual Journalism team creating
       interactive web apps and immersive storytelling formats. My passions lie
       in leveraging modern JavaScript and CSS to create elegant and usable
