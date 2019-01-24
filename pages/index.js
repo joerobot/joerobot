@@ -3,6 +3,8 @@ import "../styles/index.scss";
 import Header from "../components/Header/Header";
 import Projects from "../components/Projects/Projects";
 import Person from "../components/Person/Person";
+import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 export default () => (
   <div>
@@ -22,5 +24,7 @@ export default () => (
     <Header />
     <Projects />
     <Person />
+    <Contact />
+    <Footer />
   </div>
 );
