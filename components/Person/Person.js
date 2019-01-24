@@ -29,7 +29,7 @@ export default () => (
     <p>
       Outside the office, you can find me out in the countryside with my
       partner, daughter & whippet; adventuring and taking photos. I'm always on
-      the lookout for some amazing coffee and always up for a chat about Pokemon
+      the lookout for some amazing coffee and always up for a chat about Pokémon
       or Scandinavian crime drama or taking down the patriarchy.
     </p>
   </section>
