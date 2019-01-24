@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+footer {
+    overflow: hidden;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.footer__triangle {
+    background-color: $mint;
+    height: 15vw;
+    width: 200vw;
+    transform-origin: bottom right;
+    transform: rotate(-4deg);
+}
+
+.footer__content {
+    background-color: $mint;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__links {
+    margin: 0;
+    padding: 24px 0;
+}
