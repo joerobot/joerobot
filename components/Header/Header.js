@@ -36,7 +36,6 @@ class Header extends React.Component {
     return (
       <section className="portfolio-header">
         <div className="triangle" />
-        <div className="triangle-lower" />
         <div className="circle" onClick={this.prod} />
         <div className="title" onClick={this.prod}>
           <h1>
