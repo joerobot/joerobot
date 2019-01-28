@@ -4,16 +4,45 @@
 .contact {
     background-color: $navy;
     max-width: 640px;
-    margin: 0 24px;
-    height: 200px;
+    margin: 120px 24px 0;
+    height: 300px;
     padding: 16px;
 
     @include mq($from: 640px + 48px) {
-        margin: 0 auto;
+        margin: 120px auto 0;
     }
 }
 
 .contact__header {
     color: $sun;
     text-align: center;
+}
+
+.contact__table {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.contact__item {
+    color: #ffffff;
+    font-family: "HKGroteskBold", "Helvetica Neue", -apple-system,
+    BlinkMacSystemFont;
+
+    th {
+        text-align: right;
+    }
+
+    td {
+        padding-left: 8px;
+    }
+
+    .contact__link {
+        color: #ffffff;
+
+        &:hover,
+        &:focus {
+            color: $navy;
+            background-color: $sun;
+        }
+    }
 }

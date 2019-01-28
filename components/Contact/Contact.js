@@ -1,7 +1,17 @@
 import "./Contact.scss";
 
 export default () => (
-    <section className="contact">
+    <div className="contact">
         <h2 className="contact__header">Contact</h2>
-    </section>
+        <table className="contact__table">
+            <tr className="contact__item">
+                <th>email:</th>
+                <td><a className="contact__link" href="mailto:joe.reed.4@gmail.com">joe.reed.4@gmail.com</a></td>
+            </tr>
+            <tr className="contact__item">
+                <th>twitter:</th>
+                <td><a className="contact__link" href="https://www.twitter.com/joerobot">@joerobot</a></td>
+            </tr>
+        </table>
+    </div>
 );

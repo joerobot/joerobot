@@ -24,7 +24,6 @@ export default () => (
     <Header />
     <Projects />
     <Person />
-    <Contact />
     <Footer />
   </div>
 );
