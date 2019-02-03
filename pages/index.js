@@ -21,6 +21,14 @@ export default () => (
         rel="stylesheet"
       />
       <link rel='shortcut icon' type='image/x-icon' href='/static/img/favicons/favicon.ico' />
+      
+      <meta name="description" content="A front end specialist with a focus on UI & Data Visualisation" />
+      <meta property="og:title" content="joerobot - web developer" />
+      <meta property="og:description" content="A front end specialist with a focus on UI & Data Visualisation" />
+      <meta property="og:url" content="https://www.joerobot.co.uk" />
+      <meta name="twitter:site" content="@joerobot" />
+      <meta property="og:image" content="/static/img/favicons/64x64.png" />
+
     </Head>
     <Header />
     <Projects />
