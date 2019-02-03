@@ -6,10 +6,7 @@ class Header extends React.Component {
     super();
     this.isAnimating = false;
   }
-  componentDidMount() {
-    // document.querySelector('.portfolio-header').classList.remove('no-js');
-    // document.querySelector('.portfolio-header').classList.add('js-enabled');
-    
+  componentDidMount() {    
     setTimeout(() => {
       document.querySelector(".circle").classList.add("intro");
     }, 100);
@@ -49,6 +46,19 @@ class Header extends React.Component {
             <h4>Web Developer</h4>
           </div>
         </div>
+        <noscript>
+          <div className="triangle intro" />
+          <div className="circle intro pulse"/>
+          <div className="title intro">
+            <h1>
+              <span className="name">Joe</span>
+              <span className="name">Reed</span>
+            </h1>
+            <div className="subtitle">
+              <h4>Web Developer</h4>
+            </div>
+          </div>
+        </noscript>
       </section>
     );
   }
