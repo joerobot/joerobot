@@ -13,13 +13,13 @@ export default [
     description: us2016Desc,
     images: [
       {
-        name: "us2016-1.png",
+        name: "us2016-3.png",
       },
       {
         name: "us2016-2.png",
       },
       {
-        name: "us2016-3.png",
+        name: "us2016-1.png",
       },
       {
         name: "us2016-4.png",
@@ -40,10 +40,10 @@ export default [
     description: jihadistsDesc,
     images: [
       {
-        name: "jihadists-3.png",
+        name: "jihadists-2.png",
       },
       {
-        name: "jihadists-2.png",
+        name: "jihadists-3.png",
       },
       {
         name: "jihadists-1.png",
