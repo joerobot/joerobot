@@ -48,6 +48,11 @@ export default props => (
             </div>
           ))}
       </Carousel>
+      <noscript>
+        {props.images &&
+          <img src={`/static/img/${props.images[0].name}`} />
+        }
+      </noscript>
     </div>
   </li>
 );
