@@ -7,15 +7,18 @@ class Header extends React.Component {
     this.isAnimating = false;
   }
   componentDidMount() {
+    // document.querySelector('.portfolio-header').classList.remove('no-js');
+    // document.querySelector('.portfolio-header').classList.add('js-enabled');
+    
     setTimeout(() => {
       document.querySelector(".circle").classList.add("intro");
     }, 100);
     setTimeout(() => {
       document.querySelector(".title").classList.add("intro");
-    }, 200);
+    }, 300);
     setTimeout(() => {
       document.querySelector(".triangle").classList.add("intro");
-    }, 500);
+    }, 400);
     setTimeout(() => {
       document.querySelector(".circle").classList.add("pulse");
     }, 1000);

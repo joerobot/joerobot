@@ -1,4 +1,7 @@
 @import "../../styles/variables";
+@import "~sass-mq";
+
+$header-break: 500px; 
 
 .portfolio-header {
   position: absolute;
@@ -27,14 +30,18 @@
   pointer-events: none;
 
   &.intro {
-    transform: rotate(20deg);
+    transform: rotate(40deg);
     width: 200vw;
+
+    @include mq($from: $header-break) {
+      transform: rotate(20deg);
+    }
   }
 }
 
 .circle {
   position: absolute;
-  top: calc(12vmin + 15vmax);
+  top: calc(12vw + 20vw);
   left: 0;
   right: 0;
   margin: auto;
@@ -46,10 +53,21 @@
   transition: all 0.3s ease-out;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
+  @include mq($from: $header-break) {
+    top: calc(12vmin + 15vmax);
+  }
+
   &.intro {
-    top: 12vmin;
-    height: 30vmax;
-    width: 30vmax;  }
+    top: 12vw;
+    height: 80vw;
+    width: 80vw;
+
+    @include mq($from: $header-break) {
+      top: 12vmin;
+      height: 30vmax;
+      width: 30vmax;
+    }
+  }
 
   &.pulse {
     animation: jelly 3s linear both;
@@ -57,18 +75,25 @@
 }
 
 .title {
-  padding-top: 3vw;
+  padding-top: 12vw;
   position: absolute;
-  top: 12vh;
+  top: 12vw;
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 3.5vw;
+  font-size: 8vw;
   color: $navy;
   text-align: center;
-  width: 20vw;
+  width: 40vw;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   cursor: default;
+
+  @include mq($from: $header-break) {
+    padding-top: 3vw;
+    top: 12vh;
+    width: 20vw;
+    font-size: 3.5vw;
+  }
 
   .subtitle {
     overflow: hidden;
@@ -79,18 +104,27 @@
     h4 {
       margin: 0;
       font-weight: 400;
-      font-size: 2.5vw;
+      font-size: 4vw;
       transform: translate(0, 250%);
       transition: transform 0.5s ease-out;
+
+      @include mq($from: $header-break) {
+        font-size: 2.5vw;
+      }
     }
   }
 
   h1 {
     overflow: hidden;
-    height: 12vw;
+    height: 30vw;
     margin: 0;
     font-weight: 200;
-    line-height: 6vw;
+    line-height: 12vw;
+    
+    @include mq($from: $header-break) {
+      height: 12vw;
+      line-height: 6vw;
+    }
 
     .name {
       display: block;
@@ -117,33 +151,6 @@
     .subtitle h4 {
       transform: translate(0, 0);
     }
-  }
-}
-
-.no-js {
-  .triangle {
-      transform: rotate(20deg);
-      width: 200vw;
-      transition: none;
-    }
-
-  .circle {
-    height: 30vmax;
-    width: 30vmax;
-    transition: none;
-  }
-
-  h1 .name {
-    &:first-of-type,
-    &:last-of-type {
-      transform: translate(0, 0);
-      transition: none;
-    }
-  }
-
-  .subtitle h4 {
-    transform: translate(0, 0);
-    transition: none;
   }
 }
 
