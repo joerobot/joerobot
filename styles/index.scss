@@ -1,7 +1,3 @@
-@import 'variables';
-@import 'main';
-@import 'spinner';
-@import 'common/header';
-@import 'common/navigation';
-@import 'common/sections';
-@import 'projects';
+@import "../node_modules/flickity/dist/flickity.css";
+@import "variables";
+@import "main";

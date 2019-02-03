@@ -1,23 +1,64 @@
+@import '~sass-mq';
+
 * {
   box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    margin: 0;
-    font-family: 'HKGroteskBold', 'Helvetica Neue', -apple-system, BlinkMacSystemFont;
+  width: 100%;
+  margin: 0;
+  font-family: "HKGroteskBold", "Helvetica Neue", -apple-system,
+    BlinkMacSystemFont;
 }
 
-section {
+p {
+  font-family: "Rasa", serif;
+  color: #222;
+}
+
+a {
+  color: $navy;
+  transition: all 0.15s ease-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: oldlace;
+  }
+}
+
+code {
+  background-color: #ececec;
+  padding: 0.1em 0.25em;
+}
+
+.section-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin: 120px 16px;
+  font-size: 1.75em;
+  color: #ffffff;
+  background-color: $navy;
+  display: inline-block;
+  padding: 6px 4px;
+  position: relative;
+
+  &::after {
+    content: '';
+    height: 24px;
+    width: 24px;
     display: block;
-    overflow: hidden;
-    position: relative;
-}
+    border-radius: 12px;
+    background-color: $sun;
+    position: absolute;
+    bottom: -8px;
+    right: -16px;
+  }
 
-.header {
-    height: 100vh;
-}
-
-.projects, .person {
-    padding: 480px 20px 20px;
+  @include mq($from: 640px) {
+    margin: 120px 24px;
+  }
 }

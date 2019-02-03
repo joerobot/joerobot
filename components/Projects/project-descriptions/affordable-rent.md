@@ -1,0 +1,1 @@
+An interactive map showing rent as a percentage of income in Great Britain. Uses vector map tiles (produced by Ordnance Survey), using `mapbox-gl-js` for the front end. A lot of research and prototyping was required to see if we could bring this method to production with a focus on performance.

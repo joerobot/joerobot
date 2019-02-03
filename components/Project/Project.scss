@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "~sass-mq";
+
+.project {
+  list-style-type: none;
+  margin: 0;
+  max-width: 640px;
+}
+
+.project__link a::after {
+  content: url('/static/img/icons/ext-link.svg');
+  padding: 0 2px;
+}
+
+.project + .project {
+  padding-top: 50vh;
+}
+
+.project:nth-child(even) {
+  align-self: flex-end;
+
+  .project__title,
+  .project__link {
+    text-align: right;
+  }
+}
+
+.project__title {
+  margin: 24px 0;
+  padding: 0 8px;
+  font-size: 1.5em;
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: $mint;
+    height: 4px;
+    width: calc(100% + 8px);
+    margin: -8px -4px 0;
+  }
+}
+
+.project__content {
+  padding: 0 8px;
+}
+
+.project__screencap {
+  max-width: 640px;
+  display: block;
+  padding: 0 24px;
+
+  &--v {
+    width: 100%;
+
+    @include mq($from: 480px) {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &--w {
+    width: 100%;
+  }
+}
+
+.project__awards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding-left: 32px;
+    background-image: url('/static/img/icons/trophy.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px;
+  }
+}
