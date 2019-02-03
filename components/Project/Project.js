@@ -27,6 +27,7 @@ export default props => (
                   autoPlay
                   loop
                   muted
+                  playsInline
                 >
                   <source
                     src={`static/video/${img.name}.webm`}
