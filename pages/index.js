@@ -20,6 +20,7 @@ export default () => (
         href="https://fonts.googleapis.com/css?family=Rasa"
         rel="stylesheet"
       />
+      <link rel='shortcut icon' type='image/x-icon' href='/static/img/favicons/favicon.ico' />
     </Head>
     <Header />
     <Projects />
