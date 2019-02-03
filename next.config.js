@@ -7,6 +7,8 @@ module.exports = withSass({
       use: "raw-loader",
     });
 
+    config.target = 'serverless';
+
     return config;
   },
 });
