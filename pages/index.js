@@ -26,6 +26,7 @@ export default () => (
       <meta property="og:title" content="joerobot - web developer" />
       <meta property="og:description" content="A front end specialist with a focus on UI & Data Visualisation" />
       <meta property="og:url" content="https://www.joerobot.co.uk" />
+      <meta property="og:type" content="website" />
       <meta name="twitter:site" content="@joerobot" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:image" content="/static/img/card.jpg" />
