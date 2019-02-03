@@ -10,14 +10,11 @@ export default props => (
         <a href={props.url}>{props.urlTitle}</a>
       </p>
       {props.awards && (
-        <div>
-          <p>Awards:</p>
-          <ul>
-            {props.awards.map((award, i) => (
-              <li key={i}>{award}</li>
-            ))}
-          </ul>
-        </div>
+        <ul className="project__awards">
+          {props.awards.map((award, i) => (
+            <li key={i}>{award}</li>
+          ))}
+        </ul>
       )}
       <ReactMarkdown source={props.description} />
       <Carousel>
