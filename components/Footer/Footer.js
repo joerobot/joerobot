@@ -20,7 +20,7 @@ export default () => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://wwww.linkedin.com/in/loomingbeard">
+                        <a href="https://www.linkedin.com/in/loomingbeard">
                             <LinkedinLogo />
                         </a>
                     </li>
