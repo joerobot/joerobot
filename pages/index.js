@@ -29,7 +29,7 @@ export default () => (
       <meta property="og:type" content="website" />
       <meta name="twitter:site" content="@joerobot" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="og:image" content="/static/img/card.jpg" />
+      <meta property="og:image" content="https://www.joerobot.co.uk/static/img/card.jpg" />
 
     </Head>
     <Header />
