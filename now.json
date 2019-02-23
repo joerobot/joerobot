@@ -1,9 +1,8 @@
 {
     "version": 2,
     "alias": [
-        "joerobot.co.uk",
-        "www.joerobot.co.uk",
-        "links.joerobot.co.uk"
+        "links.joerobot.co.uk",
+        "new.joerobot.co.uk"
     ],
     "builds": [{ "src": "package.json", "use": "@now/next" }],
     "routes": [
