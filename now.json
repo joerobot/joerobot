@@ -7,15 +7,15 @@
     "builds": [{ "src": "package.json", "use": "@now/next" }],
     "routes": [
         {
-            "src": "links.joerobot.co.uk/unsplash",
+            "src": "/unsplash",
             "dest": "https://www.unsplash.com/joerobot"
         },
         {
-            "src": "links.joerobot.co.uk/twitter",
+            "src": "/twitter",
             "dest": "https://www.twitter.com/joerobot"
         },
         {
-            "src": "links.joerobot.co.uk/github",
+            "src": "/github",
             "dest": "https://www.github.com/joerobot"
         }
     ]
