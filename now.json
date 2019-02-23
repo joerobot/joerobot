@@ -1,4 +1,28 @@
 {
     "version": 2,
-    "builds": [{ "src": "package.json", "use": "@now/next" }]
+    "alias": [
+        "joerobot.co.uk",
+        "www.joerobot.co.uk",
+        "links.joerobot.co.uk"
+    ],
+    "builds": [{ "src": "package.json", "use": "@now/next" }],
+    "routes": [
+        {
+            "src": "/.*",
+            "status": 404,
+            "dest": "www.joerobot.co.uk"
+        },
+        {
+            "src": "links.joerobot.co.uk/unsplash",
+            "dest": "https://www.unsplash.com/joerobot"
+        },
+        {
+            "src": "links.joerobot.co.uk/twitter",
+            "dest": "https://www.twitter.com/joerobot"
+        },
+        {
+            "src": "links.joerobot.co.uk/github",
+            "dest": "https://www.github.com/joerobot"
+        }
+    ]
 }
