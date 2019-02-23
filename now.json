@@ -8,11 +8,6 @@
     "builds": [{ "src": "package.json", "use": "@now/next" }],
     "routes": [
         {
-            "src": "/.*",
-            "status": 404,
-            "dest": "www.joerobot.co.uk"
-        },
-        {
             "src": "links.joerobot.co.uk/unsplash",
             "dest": "https://www.unsplash.com/joerobot"
         },
