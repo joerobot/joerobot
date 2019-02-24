@@ -4,19 +4,5 @@
         "joerobot.co.uk",
         "www.joerobot.co.uk"
     ],
-    "builds": [{ "src": "package.json", "use": "@now/next" }],
-    "routes": [
-        {
-            "src": "/unsplash",
-            "dest": "https://www.unsplash.com/joerobot"
-        },
-        {
-            "src": "/twitter",
-            "dest": "https://www.twitter.com/joerobot"
-        },
-        {
-            "src": "/github",
-            "dest": "https://www.github.com/joerobot"
-        }
-    ]
+    "builds": [{ "src": "package.json", "use": "@now/next" }]
 }
