@@ -2,7 +2,9 @@
     "version": 2,
     "alias": [
         "joerobot.co.uk",
-        "www.joerobot.co.uk"
+        "www.joerobot.co.uk",
+        "joerobot.dev",
+        "www.joerobot.dev"
     ],
     "builds": [{ "src": "package.json", "use": "@now/next" }]
 }
