@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/joerobot
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joerobot.co.uk
+  * I am joerobot (https://keybase.io/joerobot) on keybase.
+  * I have a public key ASCWvPOTymREJ_OrtFPkD9QXqkI_N-_7vHopv0Y5HM0GKQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012096bcf393ca644427f3abb453e40fd417aa423f37effbbc7a29bf46391ccd06290a",
+      "host": "keybase.io",
+      "kid": "012096bcf393ca644427f3abb453e40fd417aa423f37effbbc7a29bf46391ccd06290a",
+      "uid": "2fa6c150bed24fd4feed63200d267819",
+      "username": "joerobot"
+    },
+    "merkle_root": {
+      "ctime": 1588864614,
+      "hash": "b84683ddb4c42c4f1ab3d43447a721200e58f4351a100eed4ccba214ede128ac97605e63a8420c9bf7e3cdbbeea03d2b985890d0ab083a336d532d8347589b9d",
+      "hash_meta": "f45442841df2caa57015835a7a184eb23c694290feaecc27b3bfd17156c43b7d",
+      "seqno": 16193777
+    },
+    "service": {
+      "entropy": "wfriSC/UkCyVIDtRKAO5kKTy",
+      "hostname": "joerobot.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1588864627,
+  "expire_in": 504576000,
+  "prev": "dd0e72bc9acbfdc7707ab2be1b7e259450945d1cbe2168ef8a7c0deec02d0b36",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEglrzzk8pkRCfzq7RT5A/UF6pCPzfv+7x6Kb9GORzNBikKp3BheWxvYWTESpcCD8Qg3Q5yvJrL/cdwerK+G34llFCUXRy+IWjvinwN7sAtCzbEIJxKQqcTX6Zv/Pjjbk0ab1r+Uo8BPNX3zZXIGAA13tdLAgHCo3NpZ8RAWuX+J0zmKVg1W6GCX083jn3pqVrOu2iD+gIFYlyIUE8//h21FGV4hTNfZpRJVWsNMjjZHJl053dUPVP65HBfB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJ8krVubEgJDYY8RlDHRVzCSGqNRUP3NBou8x1j7dKzso3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joerobot
+
+==================================================================
