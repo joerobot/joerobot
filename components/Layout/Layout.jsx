@@ -1,5 +1,6 @@
 import { layout, layoutTypes } from "./layout.css"
 
+
 export const Layout = ({ type = "base", children }) => {
   return (
     <div className={layout}>

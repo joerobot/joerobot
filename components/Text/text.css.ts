@@ -1,4 +1,4 @@
-import { style, styleVariants } from "@vanilla-extract/css"
+import { style, styleVariants, fallbackVar } from "@vanilla-extract/css"
 import { vars } from "../../styles/theme.css"
 import { fontFamily } from "../../styles/typography.css"
 
@@ -45,41 +45,44 @@ export const p = style({
 export const headings = styleVariants({
   h1: {
     fontSize: vars.fontSizes["4xl"],
-    fontFamily: fontFamily,
+    fontFamily: fallbackVar(fontFamily, vars.font.display),
     fontWeight: 900,
     lineHeight: "1",
     marginBlockEnd: "2rem",
+    "::after": {
+      content: ".",
+    },
   },
   h2: {
     fontSize: vars.fontSizes["3xl"],
     fontWeight: 900,
-    fontFamily: fontFamily,
+    fontFamily: fallbackVar(fontFamily, vars.font.display),
     lineHeight: "1.1",
     marginBlockStart: "1.5rem",
   },
   h3: {
     fontSize: vars.fontSizes["2xl"],
     fontWeight: 900,
-    fontFamily: fontFamily,
+    fontFamily: fallbackVar(fontFamily, vars.font.display),
     lineHeight: "1.2",
     marginBlockStart: "1.5rem",
   },
   h4: {
     fontSize: vars.fontSizes["xl"],
     fontWeight: 900,
-    fontFamily: fontFamily,
+    fontFamily: fallbackVar(fontFamily, vars.font.display),
     marginBlockStart: "1.25rem",
   },
   h5: {
     fontSize: vars.fontSizes["lg"],
     fontWeight: 900,
-    fontFamily: fontFamily,
+    fontFamily: fallbackVar(fontFamily, vars.font.display),
     marginBlockStart: "1.25rem",
   },
   h6: {
     fontSize: vars.fontSizes["md"],
     fontWeight: 900,
-    fontFamily: fontFamily,
+    fontFamily: fallbackVar(fontFamily, vars.font.display),
     marginBlockStart: "1.25rem",
   },
 })
