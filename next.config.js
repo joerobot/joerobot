@@ -1,13 +1,20 @@
-const withSass = require("@zeit/next-sass");
-
-module.exports = withSass({
-  webpack: config => {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: "raw-loader",
-    });
-
-    return config;
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+    providerImportSource: '@mdx-js/react',
   },
-  target: 'serverless',
-});
+})
+const {
+  createVanillaExtractPlugin
+} = require('@vanilla-extract/next-plugin');
+
+const withVanillaExtract = createVanillaExtractPlugin();
+
+
+const nextConfig = {
+  reactStrictMode: true,
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+}
+
+module.exports = withVanillaExtract(withMDX(nextConfig))
+
