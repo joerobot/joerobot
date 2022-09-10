@@ -4,7 +4,6 @@ import Head from "next/head"
 import "../styles/theme.css.ts"
 import "../styles/globals.css.ts"
 import "../styles/reset.css"
-import type { AppProps } from "next/app"
 import { Layout } from "../components/Layout"
 import {
   Anchor,
@@ -18,7 +17,7 @@ import {
   OL,
 } from "../components/Text"
 
-const ResponsiveImage = (props) => (
+const ResponsiveImage = (props: any) => (
   <Image alt={props.alt} layout="responsive" {...props} />
 )
 
@@ -40,7 +39,7 @@ const components = {
   hr: HR,
 }
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
   const layoutType = Component.layoutType
 
   return (

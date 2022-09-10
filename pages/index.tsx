@@ -1,12 +1,10 @@
-import type { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
 import { Text } from "../components/Text"
 import * as textStyles from "../components/Text/text.css"
 import { body, display } from "../styles/typography.css"
 import { subHeading } from "../styles/home.css"
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div>
       <Head>
