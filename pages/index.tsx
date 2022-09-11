@@ -1,5 +1,4 @@
 import Head from "next/head"
-import { motion } from "framer-motion"
 import { Text } from "../components/Text"
 import * as textStyles from "../components/Text/text.css"
 import { body, display } from "../styles/typography.css"
