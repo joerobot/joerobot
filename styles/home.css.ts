@@ -2,10 +2,16 @@ import { style } from "@vanilla-extract/css"
 import { vars } from "./theme.css"
 
 export const title = style({
-  fontSize: vars.fontSizes["5xl"],
+  fontSize: vars.fontSizes["4xl"],
 
   "::after": {
     content: ".",
+  },
+
+  "@media": {
+    "screen and (min-width: 768px)": {
+      fontSize: vars.fontSizes["5xl"],
+    },
   },
 })
 
