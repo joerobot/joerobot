@@ -29,13 +29,13 @@ export const navLink = style({
   color: vars.color.blockquote,
   textDecoration: "none",
   display: "inline-block",
-  transformOrigin: "bottom left",
+  transformOrigin: "center left",
   opacity: "0.6",
   transition: "transform 200ms ease-out, opacity 200ms ease-out",
 
-  ":hover": {
-    transform: "scale(1.1) translate(0.25rem, -0.125rem)",
-    opacity: "1",
+  ":focus": {
+      outline: "none",
+      textDecoration: "underline",
   },
 
   "::before": {
@@ -44,5 +44,12 @@ export const navLink = style({
 
   "::after": {
     content: ".",
-  },
+   },
+
+   selectors: {
+    "&:hover, &:focus": {
+      transform: "scale(1.1) translate(0.25rem, -0.125rem)",
+      opacity: "1",
+    },
+   }
 })

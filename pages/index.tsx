@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import { Text } from "../components/Text"
 import * as textStyles from "../components/Text/text.css"
 import { body, display } from "../styles/typography.css"
@@ -24,9 +25,9 @@ const Home = () => {
         </div>
 
         <nav className={nav}>
-          <a className={navLink} href="/blog">
+          <Link className={navLink} href="/posts">
             blog
-          </a>
+          </Link>
         </nav>
       </div>
     </div>
