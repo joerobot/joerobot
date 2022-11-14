@@ -3,8 +3,10 @@ import { createGlobalTheme } from "@vanilla-extract/css"
 export const vars = createGlobalTheme(":root", {
   color: {
     background: "hsl(37deg 36% 95%)",
+    backgroundAccent: "hsl(37deg 36% 85%)",
     code: "hsl(37deg 36% 90%)",
     text: "hsl(0deg 5% 14%)",
+    muted: "hsl(37deg 15% 22%)",
     blockquote: "hsl(87deg 25% 25%)",
     link: {
       base: "hsl(228deg 60% 50%)",

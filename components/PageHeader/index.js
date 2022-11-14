@@ -8,9 +8,11 @@ export const PageHeader = ({children}) => {
   return (
     <header className={header}>
       <h1 className={title}>Posts</h1>
-      <Link className={backButton} href="/">
-        <Arrow /> Back
-      </Link>
+      <div>
+        <Link className={backButton} href="/">
+          <Arrow /> Back
+        </Link>
+      </div>
     </header>
   )
 }
