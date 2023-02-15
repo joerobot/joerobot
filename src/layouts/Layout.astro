@@ -1,0 +1,85 @@
+---
+export interface Props {
+  title: string
+  description: string
+  type?: "base" | "center"
+}
+
+const { title, description, type } = Astro.props
+
+import "../styles/reset.css"
+import "../styles/global.css"
+import "../styles/typography.css"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#F8F5F0" />
+    <meta name="theme-color" content="#F8F5F0" />
+    <meta name="description" content={description} />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=erode@2,1&f[]=satoshi@900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class={"layout"}>
+      <div
+        class={["content", type === "center" ? "content-c" : undefined].join(
+          " ",
+        )}
+      >
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .layout {
+    display: flex;
+    padding-block: 2rem;
+    min-height: 100vh;
+  }
+
+  @media screen and (min-width: 768px) {
+    .layout {
+      padding-block: 4rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    margin-inline: auto;
+    max-inline-size: 90ch;
+    padding-inline: 2rem;
+  }
+
+  .content-c {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .content {
+      padding-inline: 4rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .content {
+      margin-inline-start: 12%;
+    }
+  }
+</style>

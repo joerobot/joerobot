@@ -1,0 +1,41 @@
+
+
+:root {
+    --color-background: hsl(37deg 36% 95%);
+    --color-backgroundAccent: hsl(37deg 36% 85%);
+    --color-code: hsl(37deg 36% 90%);
+    --color-text: hsl(0deg 5% 14%);
+    --color-muted: hsl(37deg 15% 22%);
+    --color-blockquote: hsl(87deg 25% 25%);
+    --color-link: hsl(228deg 60% 50%);
+    --color-link-hover: hsl(228deg 70% 30%);
+    --color-link-visited: hsl(257deg 55% 57%);
+    --color-selection: hsl(87deg 25% 60%);
+
+    --font-body: "Erode", serif;
+    --font-display: "Satoshi", sans-serif;
+    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2.125rem;
+    --font-size-3xl: 3rem;
+    --font-size-4xl: 3.75rem;
+    --font-size-5xl: 6rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-selection);
+}

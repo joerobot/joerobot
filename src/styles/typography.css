@@ -1,0 +1,152 @@
+a {
+  color: var(--color-link);
+  display: inline-block;
+  transition: color 150ms ease-out;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:focus {
+  outline: none;
+  background: var(--color-link);
+  color: var(--color-background);
+  transition: none;
+}
+
+p {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+  margin-block-start: 1.25rem;
+}
+
+blockquote > p {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  margin-block: 0;
+}
+
+blockquote > p + p {
+  margin-block-start: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  line-height: 1;
+  margin-block-end: 2rem;
+}
+
+h1::after {
+  content: ".";
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  margin-block-start: 1.5rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+  margin-block-start: 1.5rem;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  margin-block-start: 1.25rem;
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+  margin-block-start: 1.25rem;
+}
+
+h6 {
+  font-size: var(--font-size-md);
+  margin-block-start: 1.25rem;
+}
+
+code {
+  display: inline-block;
+  font-family: var(--font-mono);
+  background: var(--color-code);
+  border-radius: 0.25rem;
+  padding-inline: 0.125rem;
+  font-size: inherit;
+}
+
+pre > code {
+  background: transparent;
+  padding: 0;
+}
+
+p > code {
+  font-size: var(--font-size-sm);
+}
+
+pre {
+  font-size: var(--font-size-sm);
+  background: var(--color-code);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-block-start: 1.25rem;
+}
+
+ul, ol {
+  padding-inline-start: 2rem;
+  margin-block-start: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin: 0;
+}
+
+blockquote {
+  margin-block-start: 1.25rem;
+  display: block;
+  position: relative;
+  padding-inline: 1.25rem;
+  padding-block: 0.25rem;
+  font-size: var(--font-size-lg);
+  color: var(--color-blockquote);
+  background: hsla(87deg, 50%, 25%, 15%);
+  border-radius: 0.5rem;
+  line-height: 1.5;
+}
+
+blockquote::before {
+  content: "";
+  display: block;
+  background: currentColor;
+  width: 0.25rem;
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  left: 0;
+  border-radius: 9999px;
+}
+
+blockquote > blockquote {
+  margin-block: 0;
+}
+
+hr {
+  margin-block-start: 3rem;
+  background: currentColor;
+  height: 0.25rem;
+  display: block;
+  border: none;
+  width: 100%;
+}

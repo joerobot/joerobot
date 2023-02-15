@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout
+  title="joerobot | web developer"
+  description="joerobot | web developer"
+  type="center"
+>
+  <main>
+    <div>
+      <h1 class="title">Joerobot</h1>
+    </div>
+
+    <div>
+      <h2>Web Developer</h2>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  h1,
+  h2 {
+    text-transform: lowercase;
+  }
+
+  .title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .title::after {
+    content: ".";
+  }
+
+  @media screen and (min-width: 768px) {
+    .title {
+      font-size: var(--font-size-5xl);
+    }
+  }
+</style>
