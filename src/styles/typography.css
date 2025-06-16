@@ -1,11 +1,13 @@
 a {
   color: var(--color-link);
   display: inline-block;
-  transition: color 150ms ease-out;
+  text-decoration: underline;
+  text-underline-offset: 0.125em;
 }
 
 a:hover {
   color: var(--color-link-hover);
+  transition: color 150ms ease-out;
 }
 
 a:visited {
@@ -16,12 +18,16 @@ a:focus {
   outline: none;
   background: var(--color-link);
   color: var(--color-background);
+  text-decoration: none;
   transition: none;
 }
 
 p {
   font-size: var(--font-size-md);
   line-height: 1.6;
+}
+
+p:not(:first-of-type) {
   margin-block-start: 1.25rem;
 }
 
@@ -36,44 +42,47 @@ blockquote > p + p {
   margin-block-start: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 900;
+  text-box-edge: text alphabetic;
+  text-box-trim: trim-end;
 }
 
 h1 {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
   line-height: 1;
   margin-block-end: 2rem;
 }
 
-h1::after {
-  content: ".";
-}
-
 h2 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
   margin-block-start: 1.5rem;
   line-height: 1.1;
 }
 
 h3 {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   margin-block-start: 1.5rem;
   line-height: 1.25;
 }
 
 h4 {
-  font-size: var(--font-size-xl);
-  margin-block-start: 1.25rem;
-}
-
-h5 {
   font-size: var(--font-size-lg);
   margin-block-start: 1.25rem;
 }
 
-h6 {
+h5 {
   font-size: var(--font-size-md);
+  margin-block-start: 1.25rem;
+}
+
+h6 {
+  font-size: var(--font-size-sm);
   margin-block-start: 1.25rem;
 }
 
@@ -103,9 +112,23 @@ pre {
   margin-block-start: 1.25rem;
 }
 
-ul, ol {
+ul,
+ol {
   padding-inline-start: 2rem;
   margin-block-start: 1.25rem;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol li::marker {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
 }
 
 li > ul,
